@@ -6,3 +6,4 @@ Test_Qwen/third_party/*
 !Test_Qwen/third_party/README.md
 
 Python_coder_0.0/SI_1
+Python_coder_0.0/.vscode/*
