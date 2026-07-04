@@ -15,9 +15,10 @@ Cette documentation décrit la mise en place d'un environnement permettant d'ex�
 ---
 
 ## Architecture du projet
+Dans tout le dossier `Test_Qwen`, la racine `/` désigne le dossier `/Test_Qwen/`.
 
 ```text
-ProjetIA/
+Test_Qwen/
 │
 ├── README.md
 │
@@ -46,30 +47,32 @@ ProjetIA/
 │
 └── outputs/
 ```
-**Warning**: Ne jamais versionner les dossiers `models`, `env`, `third_party` (à l'exception des fichiers README.md) avec Git (les dossiers ont été ajoutés au .gitignore)
+**Warning**: Ne jamais versionner les dossiers `/models`, `/env`, `/third_party` (à l'exception des fichiers README.md) avec Git (les dossiers ont été ajoutés au .gitignore)
 
 ---
 
 ## Installation 
 
 ### Installation des paquets
-Voir le fichier `env/README.md`
+Voir le fichier `/env/README.md`
 
 ### Installation de llama.cpp
-Voir le fichier `third_party/README.md`
+Voir le fichier `/third_party/README.md`
 
 ### Téléchargement des modèles
-Voir le fichier `models/README.md`
+Voir le fichier `/models/README.md`
 
 ---
 
 ## Exécution d'un modèle
-Activer l'environnement conda (voir le fichier `env/README.md`)
+Activer l'environnement conda (voir le fichier `/env/README.md`).
+
+Toutes les instructions sont à exécuter depuis la racine.
 
 Commande générale pour lancer un modèle:
 
 ```bash
-./build/bin/llama-cli -m models/qwen7b/Qwen2.5-Coder-7B-Instruct-Q5_K_M.gguf
+./third_party/llama.cpp/build/bin/llama-cli -m models/qwen7b/Qwen2.5-Coder-7B-Instruct-Q5_K_M.gguf
 ```
 
 Exemple avec la modèle 7B et la quantification `q5_k_m`
