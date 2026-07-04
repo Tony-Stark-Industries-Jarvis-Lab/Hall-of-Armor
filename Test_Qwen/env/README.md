@@ -1,6 +1,6 @@
 # Environnement conda
-Toutes les commandes sont à exécuter dans l'ordre depuis le dossier courant (/Test_Qwen/env).
-Tout le dosser /Test_Qwen/env à l'exception de ce README sont ajoutés au .gitignore.
+Toutes les commandes sont à exécuter dans l'ordre depuis le dossier `/env`.
+Tout le dosser `/env` à l'exception de ce README sont ajoutés au .gitignore.
 ## Installation
 Suivre les étapes suivantes:
 - Création de l'environnement (depuis le dossier)
