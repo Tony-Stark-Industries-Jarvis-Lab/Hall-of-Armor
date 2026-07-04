@@ -1,0 +1,6 @@
+Test_Qwen/env/*
+!Test_Qwen/env/README.md
+Test_Qwen/models/*
+!Test_Qwen/models/README.md
+Test_Qwen/third_party/*
+!Test_Qwen/third_party/README.md
