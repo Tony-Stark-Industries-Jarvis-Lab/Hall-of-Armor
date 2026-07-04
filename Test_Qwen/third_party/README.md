@@ -1,6 +1,6 @@
 # Dependances externes
-Toutes les commandes sont à exécuter dans l'ordre depuis le dossier courant (/Test_Qwen/third_party/).
-Tout le dosser /Test_Qwen/third_party à l'exception de ce README sont ajoutés au .gitignore.
+Toutes les commandes sont à exécuter dans l'ordre depuis le dossier `/third_party`.
+Tout le dosser `/third_party` à l'exception de ce README sont ajoutés au .gitignore.
 
 ## Installation de llama.cpp
 
@@ -26,3 +26,4 @@ Une fois la compilation terminée, le binaire principal est disponible dans :
 ```text
 build/bin/llama-cli
 ```
+(Permet notamment l'exécution du modèle)
