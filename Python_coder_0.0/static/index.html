@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stark Industries — Multi-Agent HQ</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════════╗ -->
+  <!-- ║              HEADER                      ║ -->
+  <!-- ╚══════════════════════════════════════════╝ -->
+  <header class="site-header">
+    <span class="header-logo">⚡</span>
+    <div class="header-title">
+      <h1>STARK INDUSTRIES</h1>
+      <p>Multi-Agent HQ &mdash; <span id="model-name">qwen2.5-coder:1.5b</span></p>
+    </div>
+    <div class="header-status">
+      <span class="status-dot"></span>
+      <span>ONLINE</span>
+    </div>
+  </header>
+
+  <!-- ╔══════════════════════════════════════════╗ -->
+  <!-- ║              OFFICE                      ║ -->
+  <!-- ╚══════════════════════════════════════════╝ -->
+  <section class="office">
+
+    <!-- Wall strip with decorations -->
+    <div class="office-wall">
+      <div class="wall-deco board"></div>
+      <div class="wall-deco memo"></div>
+      <div class="wall-deco door"></div>
+      <div class="wall-deco extinguisher"></div>
+    </div>
+
+    <!-- Floor with 3 workstations -->
+    <div class="office-floor">
+
+      <!-- ── AGENT CODE ── -->
+      <div class="workstation" id="ws-code" data-agent="code">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_2.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item monitor"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#4a9eff"></span>
+          Expert Code
+        </div>
+      </div>
+
+      <!-- ── AGENT GENERAL ── -->
+      <div class="workstation" id="ws-general" data-agent="general">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_4.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item papers"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#ff8c42"></span>
+          General Expert
+        </div>
+      </div>
+
+      <!-- ── AGENT WRITER ── -->
+      <div class="workstation" id="ws-writer" data-agent="writer">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_6.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item keyboard"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#9b59b6"></span>
+          Writer Expert
+        </div>
+      </div>
+
+    </div><!-- /office-floor -->
+
+    <!-- ╔══════════════════════════════════════════╗ -->
+    <!-- ║           CODE TEAM SEPARATOR            ║ -->
+    <!-- ╚══════════════════════════════════════════╝ -->
+    <div class="code-section-divider">
+      <div class="divider-line"></div>
+      <span class="divider-label">⚡ CODE TEAM</span>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- Code Team Floor — 4 pipeline agents -->
+    <div class="office-floor code-team-floor">
+
+      <!-- ── ARCHITECTE ── -->
+      <div class="workstation" id="ws-architecte" data-agent="architecte">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_7.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item monitor"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#ffd700"></span>
+          Architect
+        </div>
+      </div>
+
+      <!-- ── DÉVELOPPEUR ── -->
+      <div class="workstation" id="ws-developpeur" data-agent="developpeur">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_8.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item keyboard"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#00d4ff"></span>
+          Developer
+        </div>
+      </div>
+
+      <!-- ── RÉVISEUR ── -->
+      <div class="workstation" id="ws-reviseur" data-agent="reviseur">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_9.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item papers"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#ff4455"></span>
+          Reviewer
+        </div>
+      </div>
+
+      <!-- ── TESTEUR ── -->
+      <div class="workstation" id="ws-testeur" data-agent="testeur">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_10.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item monitor"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#00ff88"></span>
+          Tester
+        </div>
+      </div>
+
+      <!-- ── ÉDITEUR ── -->
+      <div class="workstation" id="ws-editeur" data-agent="editeur">
+        <div class="thinking-badge">THINKING...</div>
+        <div class="agent-sprite"
+             style="background-image: url('/assets/Office_Character_11.png')">
+        </div>
+        <div class="desk">
+          <div class="desk-item keyboard"></div>
+        </div>
+        <div class="ws-label">
+          <span class="ws-dot" style="background:#ff9500"></span>
+          Editor
+        </div>
+      </div>
+
+    </div><!-- /code-team-floor -->
+
+  </section>
+
+  <!-- ╔════════════════════════════════════════════╗ -->
+  <!-- ║         FILE MANAGER MODAL               ║ -->
+  <!-- ╚════════════════════════════════════════════╝ -->
+  <div id="file-manager-modal" class="modal-overlay hidden" aria-modal="true" role="dialog">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-icon">🗂</span>
+        <span class="modal-title">EDITOR — FILE PLAN</span>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close">✕</button>
+      </div>
+
+      <p class="modal-subtitle">
+        Review the files below, choose an action for each one, then confirm.
+      </p>
+
+      <div class="modal-file-list" id="modal-file-list">
+        <!-- populated dynamically by main.js -->
+      </div>
+
+      <div class="modal-footer">
+        <button id="modal-cancel-btn" class="modal-btn cancel">CANCEL</button>
+        <button id="modal-apply-btn" class="modal-btn apply">APPLY ►</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ╔══════════════════════════════════════════╗ -->
+  <!-- ║              TERMINAL                    ║ -->
+  <!-- ╚══════════════════════════════════════════╝ -->
+  <section class="terminal">
+
+    <div class="terminal-header">
+      <span class="t-dot red"></span>
+      <span class="t-dot yellow"></span>
+      <span class="t-dot green"></span>
+      <span class="t-title">terminal — multi-agent chat</span>
+    </div>
+
+    <div class="chat-output" id="chat-output">
+      <div class="msg system">
+        Welcome to Stark Industries. Ask a question to engage your agents.
+      </div>
+    </div>
+
+    <div class="chat-input-row">
+      <span class="prompt-sym">&gt;</span>
+      <input id="question-input"
+             type="text"
+              placeholder="Ask your question here..."
+             autocomplete="off">
+            <button id="send-btn">SEND &#9658;</button>
+    </div>
+
+  </section>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
