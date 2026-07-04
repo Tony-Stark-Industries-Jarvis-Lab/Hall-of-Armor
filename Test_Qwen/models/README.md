@@ -1,5 +1,5 @@
 # Modèles Qwen
-Tout le dosser /Test_Qwen/models à l'exception de ce README sont ajoutés au .gitignore.
+Tout le dosser `/models` à l'exception de ce README sont ajoutés au .gitignore.
 
 ## Liste des modèles
 Les modèles retenus sont les suivants :
@@ -59,7 +59,7 @@ Optionnel, permet d'avoir un téléchargement plus rapide.
   - Vérification avec la commande `hf auth whoami` (Who am I ?) dans le terminal -> doit afficher le username entré lors de l'inscription sur le site.
 
 ### Instruction de téléchargement
-Les instructions sont à exécuter depuis le dossier `Test_Qwen/models`.
+Les instructions sont à exécuter depuis le dossier `/models`.
 
 L'instruction générale est 
 
